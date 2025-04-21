@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbox - MedicalShala</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="inbox-container">
+        <div class="inbox-header">
+            <div class="inbox-logo">
+                <img src="assets/images/logo.png" alt="MedicalShala Logo" class="inbox-animated-logo">
+            </div>
+            <h2>Inbox</h2>
+            <div class="inbox-user">
+                <img src="assets/images/profile.png" alt="User" class="inbox-user-avatar">
+                <span class="inbox-menu-btn">⋮</span>
+            </div>
+        </div>
+        <div class="inbox-main">
+            <div class="inbox-sidebar">
+                <button class="inbox-schedule-btn">Schedule Appointment</button>
+                <a href="#"><img src="assets/images/appointment.png" alt="Appointment"> Appointment</a>
+                <a href="#"><img src="assets/images/encounter.png" alt="Encounter"> Encounter</a>
+                <a href="ask-ai.html"><img src="assets/images/ai-assist.png" alt="Ask AI"> Ask AI</a>
+                <a href="#"><img src="assets/images/prescription.png" alt="Prescription"> Prescription</a>
+                <a href="#"><img src="assets/images/doctor.png" alt="Doctor & Clinic"> Doctor & Clinic</a>
+                <a href="#"><img src="assets/images/bed.png" alt="Bed Allotment"> Bed Allotment</a>
+                <a href="#"><img src="assets/images/payment.png" alt="Payment"> Payment</a>
+                <a href="#"><img src="assets/images/history.png" alt="History"> History</a>
+                <a href="#"><img src="assets/images/camp.png" alt="Campaign"> Campaign</a>
+                <a href="login.html" style="color: #ffffff;">Login</a>
+                <a href="signup.html" style="color: #ffffff;">Sign Up</a>
+            </div>
+            <div class="inbox-middle">
+                <div class="inbox-filter">
+                    <button class="inbox-filter-btn">Internal Patients</button>
+                    <button class="inbox-filter-btn inbox-active-filter">External Patient</button>
+                    <select class="inbox-filter-select">
+                        <option>All Types</option>
+                        <option>All Appointments</option>
+                    </select>
+                </div>
+                <div class="inbox-patient-list">
+                    <div class="inbox-patient active">
+                        <img src="assets/images/arav.png" alt="Aarav" class="inbox-patient-avatar">
+                        Aarav<br>You: Of course, I'll do...
+                    </div>
+                    <div class="inbox-patient">
+                        <img src="assets/images/ishita.png" alt="Ishita" class="inbox-patient-avatar">
+                        Ishita<br>I've been experiencing...
+                    </div>
+                    <div class="inbox-patient">
+                        <img src="assets/images/vihan.png" alt="Vihaan" class="inbox-patient-avatar">
+                        Vihaan<br>Can you please confirm...
+                    </div>
+                    <div class="inbox-patient">
+                        <img src="assets/images/meera.png" alt="Meera" class="inbox-patient-avatar">
+                        Meera<br>Is it safe to continue the...
+                    </div>
+                    <div class="inbox-patient">
+                        <img src="assets/images/additya.png" alt="Aditya" class="inbox-patient-avatar">
+                        Aditya<br>The prescribed ointment...
+                    </div>
+                    <div class="inbox-patient">
+                        <img src="assets/images/kavya.png" alt="Kavya" class="inbox-patient-avatar">
+                        Kavya<br>I've completed the antib...
+                    </div>
+                    <div class="inbox-patient">
+                        <img src="assets/images/ananya.png" alt="Ananya" class="inbox-patient-avatar">
+                        Ananya<br>Thank you for the prescri...
+                    </div>
+                    <div class="inbox-patient">
+                        <img src="assets/images/rohan.png" alt="Rohan" class="inbox-patient-avatar">
+                        Rohan<br>I need an urgent appoint...
+                    </div>
+                </div>
+            </div>
+                <div class="inbox-chat-area">
+                    <div class="inbox-date">02-01-2025</div>
+                    <div class="inbox-message inbox-user-message">
+                        <div class="inbox-avatar"><img src="assets/images/profile.png" alt="User"></div>
+                        <span>Doctor, the pain in my shoulder hasn't gone away even after applying the ointment you prescribed. Should I consider getting an X-ray?</span>
+                        <span class="inbox-time">09:00</span>
+                    </div>
+                    <div class="inbox-message inbox-ai-message">
+                        <div class="inbox-avatar"><img src="assets/images/arav.png" alt="AI"></div>
+                        <span>Of course, I'll do a detailed evaluation to determine the issue. If necessary, we'll arrange for an X-ray and explore alternative treatments.</span>
+                        <span class="inbox-time">09:15</span>
+                    </div>
+                    <div class="inbox-date">10-01-2025</div>
+                    <div class="inbox-message inbox-user-message">
+                        <div class="inbox-avatar"><img src="assets/images/profile.png" alt="User"></div>
+                        <span>Doctor, I've been feeling dizzy and lightheaded since yesterday. Should I get some tests done?</span>
+                        <span class="inbox-time">10:00</span>
+                    </div>
+                    <div class="inbox-message inbox-ai-message">
+                        <div class="inbox-avatar"><img src="assets/images/arav.png" alt="AI"></div>
+                        <span>Of course, I'll do a thorough check-up to understand the cause. Let's also run a blood test and monitor your blood pressure to ensure everything is fine.</span>
+                        <span class="inbox-time">10:15</span>
+                    </div>
+                    <div class="inbox-message inbox-user-message">
+                        <div class="inbox-avatar"><img src="assets/images/profile.png" alt="User"></div>
+                        <span>Here is your report</span>
+                        <span class="inbox-time">10:30</span>
+                    </div>
+                    <button class="inbox-review-btn">Review</button>
+                    <div class="inbox-input-area">
+                        <input type="text" placeholder="Type here...">
+                        <button class="inbox-attach-btn"><img src="assets/images/export.png" alt="Attach"></button>
+                        <button class="inbox-voice-btn"><img src="assets/images/share.png" alt="Voice"></button>
+                        <button class="inbox-send-btn">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

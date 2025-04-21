@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbox - MedicalShala</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="inbox-container">
+        <div class="inbox-header">
+            <div class="inbox-logo">
+                <img src="assets/images/logo.png" alt="MedicalShala Logo" class="inbox-animated-logo">
+            </div>
+            <h2>Inbox</h2>
+            <div class="inbox-user">
+                <img src="assets/images/profile.png" alt="User" class="inbox-user-avatar">
+                <span class="inbox-menu-btn">⋮</span>
+            </div>
+        </div>
+        <div class="inbox-main">
+            <div class="inbox-sidebar">
+                <button class="inbox-schedule-btn">Schedule Appointment</button>
+                <a href="#"><img src="assets/images/appointment.png" alt="Appointment"> Appointment</a>
+                <a href="#"><img src="assets/images/encounter.png" alt="Encounter"> Encounter</a>
+                <a href="inbox.html"><img src="assets/images/inbox.png" alt="Inbox"> Inbox</a>
+                <a href="ask-ai.html"><img src="assets/images/ai-assist.png" alt="Ask AI"> Ask AI</a>
+                <a href="#"><img src="assets/images/prescription.png" alt="Prescription"> Prescription</a>
+                <a href="#"><img src="assets/images/doctor.png" alt="Doctor & Clinic"> Doctor & Clinic</a>
+                <a href="#"><img src="assets/images/bed.png" alt="Bed Allotment"> Bed Allotment</a>
+                <a href="#"><img src="assets/images/payment.png" alt="Payment"> Payment</a>
+                <a href="#"><img src="assets/images/history.png" alt="History"> History</a>
+                <a href="#"><img src="assets/images/camp.png" alt="Campaign"> Campaign</a>
+                <a href="login.html" style="color: #ffffff;">Login</a>
+                <a href="signup.html" style="color: #ffffff;">Sign Up</a>
+            </div>
+            <div class="ask-ai-chat-container">
+                <div class="ask-ai-message ask-ai-user-message">
+                    <div class="ask-ai-avatar"><img src="assets/images/profile.png" alt="User"></div>
+                    What does this X-ray shows?<br>
+                    <img src="assets/images/xray.png" alt="X-ray" class="ask-ai-xray-image">
+                </div>
+                <div class="ask-ai-message ask-ai-ai-message">
+                    <div class="ask-ai-avatar"><img src="assets/images/ai-assist.png" alt="AI"></div>
+                    <div class="ask-ai-response">
+                        <div class="ask-ai-response-icon"></div>
+                        X-rays of the human knee:
+                        <ul>
+                            <li>Mild narrowing of the medial joint space, suggestive of early osteoarthritis.</li>
+                            <li>Bone alignment is normal, with no fractures or dislocations.</li>
+                            <li>No visible soft tissue swelling or calcifications.</li>
+                            <li>Patella is well-positioned without subluxation.</li>
+                        </ul>
+                        Impressions:
+                        <ul>
+                            <li>Early signs of osteoarthritis with no acute abnormalities.</li>
+                            <li>Clinical correlation and further evaluation (e.g., MRI) recommended if symptoms persist.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ask-ai-input-area">
+                    <input type="text" placeholder="Type here...">
+                    <button class="ask-ai-attach-btn"><img src="assets/images/.png" alt="Attach"></button>
+                    <button class="ask-ai-voice-btn"><img src="assets/images/voice-icon.png" alt="Voice"></button>
+                    <button class="ask-ai-send-btn">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+<style>
+    /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Ask AI Page Styles */
+.ask-ai-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ask-ai-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #dee2e6;
+    background-color: #fff;
+    justify-content: space-between;
+}
+
+.ask-ai-logo {
+    margin-right: 20px;
+}
+
+.ask-ai-animated-logo {
+    width: 100px;
+    animation: ask-ai-bounceIn 1s ease-in-out;
+}
+
+@keyframes ask-ai-bounceIn {
+    0% { transform: scale(0); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.ask-ai-header h2 {
+    margin: 0;
+    color: #007bff;
+    font-size: 24px;
+    flex-grow: 1;
+}
+
+.ask-ai-user {
+    display: flex;
+    align-items: center;
+}
+
+.ask-ai-user-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.ask-ai-menu-btn {
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #007bff;
+}
+
+.ask-ai-main {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.ask-ai-sidebar {
+    width: 200px;
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    border-right: 1px solid #dee2e6;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.ask-ai-sidebar a, .ask-ai-sidebar button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.ask-ai-sidebar a img, .ask-ai-sidebar button img {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+.ask-ai-sidebar a:hover, .ask-ai-sidebar button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.ask-ai-active {
+    background-color: #0056b3;
+}
+
+.ask-ai-schedule-btn {
+    background-color: #28a745;
+    margin-bottom: 10px;
+}
+
+.ask-ai-schedule-btn:hover {
+    background-color: #218838;
+}
+
+.ask-ai-chat-container {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ask-ai-message {
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    animation: ask-ai-fadeIn 0.5s ease-in;
+    display: flex;
+    align-items: flex-start;
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+    background-color: #007bff;
+    color: white;
+}
+
+.ask-ai-user-message {
+    background-color: #e9ecef;
+    color: black;
+    flex-direction: row-reverse;
+}
+
+.ask-ai-ai-message {
+    background-color: #007bff;
+    color: white;
+}
+
+.ask-ai-avatar {
+    margin: 0 10px;
+}
+
+.ask-ai-avatar img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.ask-ai-message span {
+    flex: 1;
+    word-wrap: break-word;
+}
+
+.ask-ai-xray-image {
+    max-width: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: block;
+}
+
+.ask-ai-response {
+    flex: 1;
+}
+
+.ask-ai-response-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #0056b3;
+    border-radius: 50%;
+    margin-right: 10px;
+    float: left;
+    margin-top: 5px;
+}
+
+.ask-ai-response ul {
+    padding-left: 20px;
+    margin: 5px 0;
+    list-style-type: disc;
+}
+
+.ask-ai-input-area {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px; /* Reduced padding */
+    background-color: #fff;
+    border-top: 1px solid #dee2e6;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 200px);
+    margin-left: 200px;
+}
+
+.ask-ai-input-area input {
+    flex: 1;
+    padding: 5px; /* Reduced padding */
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+    margin-right: 5px; /* Reduced margin */
+}
+
+.ask-ai-attach-btn, .ask-ai-voice-btn, .ask-ai-send-btn {
+    padding: 5px; /* Reduced padding */
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.ask-ai-attach-btn img, .ask-ai-voice-btn img {
+    width: 16px; /* Reduced image size */
+    height: 16px; /* Reduced image size */
+}
+
+.ask-ai-send-btn {
+    padding: 5px 10px; /* Reduced padding */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 12px; /* Reduced font size */
+    margin-left: 5px; /* Reduced margin */
+}
+
+.ask-ai-send-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.ask-ai-attach-btn:hover, .ask-ai-voice-btn:hover {
+    transform: scale(1.1);
+}
+
+@keyframes ask-ai-fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes ask-ai-slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+</style>

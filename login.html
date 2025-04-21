@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MedicalShala</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-section">
+            <div class="logo"><img src="assets/images/logo.png" alt="MedicalShala Logo"></div>
+            <h2>Welcome Back!</h2>
+            <p>Sign in to your account</p>
+            <input type="text" placeholder="Email" id="login-email">
+            <input type="password" placeholder="Password" id="login-password">
+            <div>
+                <input type="checkbox" id="remember-me"> Remember me
+                <a href="#" style="float: right; color: #007bff;">Forgot Password?</a>
+            </div>
+            <button onclick="handleLogin()">Sign In</button>
+            <div style="text-align: center; margin: 20px 0;">Or Sign in with</div>
+            <div class="social-login">
+                <button><img src="assets/images/google1.jpg" alt="Google" style="width: 20px;"></button>
+                <button><img src="assets/images/apple1.png" alt="Apple" style="width: 20px;"></button>
+            </div>
+            <p style="text-align: center;">Don't have an Account? <a href="signup.html" style="color: #007bff;">Register</a></p>
+        </div>
+        <div class="info-section">
+            <div>
+                <h2>Revolutionize Healthcare Management Effortlessly!</h2>
+                <p>Effortlessly manage appointments, health records, and patient interactions with our all-in-one healthcare management platform.</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
